@@ -1,0 +1,12 @@
+<p>login-control works!</p>
+<label>User Name</label><br/><br/>
+<input type="text" [(ngModel)]="loginName" >
+
+<p> User entered input in {{ loginName }} </p>
+
+<button [disabled]="getLogin()" (click)="loginEmpty()">Empty Text Box</button>
+<br/>
+<br/>
+<br/>
+
+<input type="button" value="TextBox" [disabled]="!loginName" (click)="loginEmpty()">
